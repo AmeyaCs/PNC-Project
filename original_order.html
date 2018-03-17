@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Order Now</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="\project\css\order_css.css">
+	<script type="text/javascript" src="\project\js\order_js.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="\project\css\w3.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="main">
+<table>
+<form>
+	<tr><th colspan="4" id="ord">Select Your Order</th></tr>
+	<tr>
+		<th>Products</th>
+		<td></td>
+		<td><strong>Quantity</strong></td>
+		<td><strong>Amount</strong></td>
+	</tr>
+	<tr><th>Grep Guard Paper:</th></tr>
+	<tr>
+		<td></td>
+		<td><label>1000 NOS:</label></td>
+		<td><input type="number" id="nos" name="quantity" min="0" max="5" value="0" onchange="myfunction('nos','nos_am')"></td>
+		<td><input type="text" name="amount" id="nos_am" readonly=""></td>
+	</tr>
+	<tr>
+		<th>Cello Tape:</th>
+	</tr>
+	<tr>
+		<td></td>
+		<td>8mm:</td>
+		<td><input type="number" id="tape" name="quantity" min="0" max="5" value="0" onchange="myfunction('tape','tape_am')"></td>
+		<td><input type="text" name="amount" id="tape_am" readonly=""></td>		
+	</tr>
+	<tr>
+		<td></td>
+		<td>10mm:</td>
+		<td><input type="number" id="tape1" name="quantity" min="0" max="5" value="0" onchange="myfunction('tape1','tape1_am')"></td>
+		<td><input type="text" name="amount" id="tape1_am" readonly=""></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>18mm:</td>
+		<td><input type="number" id="tape2" name="quantity" min="0" max="5" value="0" onchange="myfunction('tape2','tape2_am')"></td>
+		<td><input type="text" name="amount" id="tape2_am" readonly=""></td>
+	</tr>
+	<tr>
+		<th>Boxes:</th>
+	</tr>
+	<tr>
+		<td></td>
+		<td>1 Ton:</td>
+		<td><input type="number" id="box" name="quantity" min="0" max="5" value="0" onchange="myfunction('box','box_am')"></td>
+		<td><input type="text" name="amount" id="box_am" readonly=""></td>
+	</tr>
+	<tr><th>Inks:</th></tr>
+	<tr>
+		<td></td>
+		<td>1 Drum:</td>
+		<td><input type="number" id="ink" name="quantity" min="0" max="5" value="0" onchange="myfunction('ink','ink_am')"></td>
+		<td><input type="text" name="amount" id="ink_am" readonly=""></td>
+	</tr>
+	<tr>
+		<th></th>
+		<td></td>
+		<td><strong>Total:</strong></td>
+		<td><input type="text" id="total_am" name="amount" readonly=""></td>
+	</tr>
+</form>	
+	<tr>
+		<td colspan="4">
+			<!--<input type="submit" id="sub" name="" value="Order Now">-->
+			<div class="w3-container">
+			  <button onclick="document.getElementById('id01').style.display='block'" class="w3-btn">Proceed Your Order</button>
+
+			  <div id="id01" class="w3-modal">
+			    <div class="w3-modal-content w3-animate-bottom">
+			      <header class="w3-container w3-teal">
+			        <span onclick="document.getElementById('id01').style.display='none'"
+			        class="w3-closebtn">&times;</span>
+			        <h2>Enter Your Details</h2>
+			      </header>
+			      <div class="w3-container">
+			      	
+			      	<div class="container">
+			        	<form class="form-horizontal">
+						<fieldset>
+
+						<!-- Form Name -->
+						<legend>Your Order Details</legend>
+
+						<!-- Text input-->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" for="name">Your Full Name</label>  
+						  <div class="col-md-4">
+						  <input id="name" name="name" type="text" placeholder="Enter Your Name" class="form-control input-md">
+						    
+						  </div>
+						</div>
+
+						<!-- Text input-->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" for="email">Email</label>  
+						  <div class="col-md-4">
+						  <input id="email" name="email" type="text" placeholder="Enter Your Email" class="form-control input-md">
+						    
+						  </div>
+						</div>
+
+						<!-- Text input-->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" for="number">Contact</label>  
+						  <div class="col-md-4">
+						  <input id="number" name="number" type="text" placeholder="Contact Number" class="form-control input-md">
+						    
+						  </div>
+						</div>
+
+						<!-- Text input-->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" for="address1">Address</label>  
+						  <div class="col-md-4">
+						  <input id="address1" name="address1" type="text" placeholder="Address Line1" class="form-control input-md">
+						    
+						  </div>
+						</div>
+
+						<!-- Text input-->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" for="address2"></label>  
+						  <div class="col-md-4">
+						  <input id="address2" name="address2" type="text" placeholder="Address Line2" class="form-control input-md">
+						    
+						  </div>
+						</div>
+
+						<div class="form-group">
+						  <label class="col-md-4 control-label" for="city">City</label>  
+						  <div class="col-md-4">
+						  <input id="city" name="city" type="text" placeholder="Enter Your City" class="form-control input-md">
+						    
+						  </div>
+						</div>
+
+						<!-- Text input-->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" for="state">State</label>  
+						  <div class="col-md-4">
+						  <input id="state" name="state" type="text" placeholder="Enter Your State" class="form-control input-md">
+						    
+						  </div>
+						</div>
+
+						<!-- Text input-->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" for="pin">Pin</label>  
+						  <div class="col-md-4">
+						  <input id="pin" name="pin" type="text" placeholder="Enter Pincode" class="form-control input-md">
+						    
+						  </div>
+						</div>
+
+						<!-- Button (Double) -->
+						<div class="form-group">
+						  <label class="col-md-4 control-label" for="submit"></label>
+						  <div class="col-md-8">
+						    <button id="submit" name="submit" class="btn btn-success">Submit</button>
+						    <button id="cancle" name="cancle" class="btn btn-danger">Cancle</button>
+						  </div>
+						</div>
+
+						</fieldset>
+						</form>
+						<!-- Text input-->
+					</div>
+						
+			        <p>Some text..</p>
+			      </div>
+			      <footer class="w3-container w3-teal">
+			        <p>Modal Footer</p>
+			      </footer>
+			    </div>
+			  </div>
+			</div>
+		</td>
+	</tr>
+
+</table>
+</div>
+</body>

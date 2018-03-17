@@ -1,0 +1,43 @@
+form {
+	border-style: solid;
+	border-color: black;
+	padding: 50px;
+	background-color: #FFFFFF;
+	color: black;
+}
+.row{
+	padding: 3px;
+}
+.form-control{
+	background-color: #FFFFFF;
+}
+.form-control[readonly]{
+	background-color: #FFFFFF;
+}
+.h1, h1{
+	padding-bottom: 30px;
+	color: #008080;
+
+}
+.text-uppercase{
+	color: #008080;
+}
+.t1{
+	padding-top: 40px;
+}
+.modal-content{
+	background-color: 	#F8F8FF;
+}
+.form-horizontal .control-label{
+	color: #000000;
+}
+.btn-group-lg>.btn, .btn-lg{
+	background-color: #00FFFF;
+	color: black;	
+}
+.btn-danger{
+	width: 80px;
+}
+.t2{
+	padding: 20px;
+}
